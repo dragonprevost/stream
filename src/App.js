@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactPlayer from 'react-player';
+import SourceField from './components/input.jsx';
 import './App.css';
 
 class App extends Component {
@@ -27,7 +28,10 @@ class App extends Component {
 					/>
 			}
 			<label>Video URL</label>
-			<input id='source' onChange={ this.handleTextChange } />
+		  <SourceField 
+		    handleTextChange={ this.handleTextChange } 
+		    id={ 'source' }
+		  />
 		</header>
       </div>
     );
